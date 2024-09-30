@@ -1,45 +1,29 @@
-import { useState } from "react";
+import Card from "../components/Card";
 
-const Card = () => {
-  const [rotation, setRotation] = useState({ rotateX: 0, rotateY: 0 });
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    const card = e.currentTarget;
-    const cardWidth = card?.offsetWidth;
-    const cardHeight = card?.offsetHeight;
-    const centerX = card?.offsetLeft + cardWidth / 2;
-    const centerY = card?.offsetTop + cardHeight / 2;
-
-    const mouseX = e.clientX - centerX;
-    const mouseY = e.clientY - centerY;
-
-    const rotateX = (25 * mouseY) / (cardHeight / 2);
-    const rotateY = (-25 * mouseX) / (cardWidth / 2);
-
-    setRotation({ rotateX, rotateY });
-  };
-
-  const handleMouseLeave = () => {
-    setRotation({ rotateX: 0, rotateY: 0 });     
-  };
-
+export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div
-        className="w-72 h-48 bg-white rounded-lg shadow-lg transition-transform duration-200"
-        style={{
-          perspective: "1000px",
-          transform: `rotateX(${rotation.rotateX}deg) rotateY(${rotation.rotateY}deg)`,
-        }}
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
-      >
-        <div className="flex items-center justify-center h-full">
-          <h1 className="text-xl font-bold">3D Card</h1>
+    <Card>
+      <div className="content relative z-10 text-[#dad5d5] font-[12px] flex w-[40%] ml-[30px] flex-col">
+        <div className="title font-titleFont font-bold text-6xl">
+          <span>Ashish Gohil</span>
         </div>
-      </div>
-    </div>
-  );
-};
 
-export default Card;
+        <p className="mt-10">
+          A software engineer, started with a focus on frontend development
+          using React.js and Next.js. Over time, I expanded my skill set,
+          gaining backend experience with Node.js and AWS, and mastering
+          database management with PostgreSQL.
+          <br />
+          <br />
+          While I began with foundational knowledge, I continuously pushed
+          myself to improve, handling full-stack projects and collaborating with
+          teams at TCS. Now, with over two years of experience, I've grown into
+          a versatile developer, skilled at building scalable web applications.
+        </p>
+      </div>
+      <div className="character relative bottom-7">
+        <img src="/portfolio_pic.png" style={{ height: "500px" }} alt="" />
+      </div>
+    </Card>
+  );
+}
