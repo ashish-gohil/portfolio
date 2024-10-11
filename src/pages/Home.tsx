@@ -1,14 +1,12 @@
 import Card from "../components/Card";
+import Title from "../components/Title";
 
 export default function Home() {
   return (
     <Card>
-      <div className="content relative z-10 text-[#dad5d5] font-[12px] flex w-[40%] ml-[30px] flex-col">
-        <div className="title font-titleFont font-bold text-6xl">
-          <span>Ashish Gohil</span>
-        </div>
-
-        <p className="mt-10">
+      <div className=" content z-10 h-full pt-[30px] align-top text-[#dad5d5] font-[12px] flex w-[60%] ml-[30px] flex-col">
+        <Title title="Ashish Gohil" />
+        <p className="mt-10 text-xl">
           A software engineer, started with a focus on frontend development
           using React.js and Next.js. Over time, I expanded my skill set,
           gaining backend experience with Node.js and AWS, and mastering
@@ -21,8 +19,12 @@ export default function Home() {
           a versatile developer, skilled at building scalable web applications.
         </p>
       </div>
-      <div className="character relative bottom-7">
-        <img src="/portfolio_pic.png" style={{ height: "500px" }} alt="" />
+      <div className="character relative bottom-5">
+        <img
+          src="/portfolio_pic.png"
+          style={{ height: "85vh", width: "16vw" }}
+          alt=""
+        />
       </div>
     </Card>
   );

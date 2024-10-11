@@ -1,13 +1,12 @@
 import Card from "../components/Card";
+import Title from "../components/Title";
 
 export default function ContactPage() {
   return (
     <Card>
-      <div className="content relative z-10 text-[#dad5d5] font-[12px] flex w-[40%] ml-[30px] flex-col">
-        <div className="title font-titleFont font-bold text-6xl">
-          <span>Contact Me</span>
-        </div>
-        <div className="  text-[#dad5d5] font-[12px] flex flex-col justify-center items-center">
+      <div className="content z-10 h-full pt-[30px] align-top text-[#dad5d5] font-[12px] flex w-[60%] ml-[30px] flex-col">
+        <Title title="Contact Me" />
+        <div className="  text-[#dad5d5] font-[12px] h-full flex flex-col justify-center items-center">
           <div className="text-center">
             <p className="text-lg">Ashish Gohil</p>
             <p className="text-lg">
