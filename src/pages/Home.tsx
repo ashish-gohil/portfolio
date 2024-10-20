@@ -4,7 +4,7 @@ import Title from "../components/Title";
 export default function Home() {
   return (
     <Card>
-      <div className=" content z-10 h-full pt-[30px] align-top text-[#dad5d5] font-[12px] flex w-[60%] ml-[30px] flex-col">
+      <div className="content z-10 h-full pt-[30px] align-top text-[#dad5d5] font-[12px] flex w-[60%] ml-[30px] flex-col">
         <Title title="Ashish Gohil" />
         <p className="mt-10 text-xl">
           A software engineer, started with a focus on frontend development
@@ -17,6 +17,14 @@ export default function Home() {
           myself to improve, handling full-stack projects and collaborating with
           teams at TCS. Now, with over two years of experience, I've grown into
           a versatile developer, skilled at building scalable web applications.
+          <br />
+          <br />
+          <br />
+          <ul className="list-disc pl-5 mt-2">
+            <li>
+              <strong>TCS Limited</strong> - <em>Oct. 2021 – Present</em>
+            </li>
+          </ul>
         </p>
       </div>
       <div className="character relative bottom-5">
