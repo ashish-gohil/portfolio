@@ -8,8 +8,10 @@ export default function SkillsPage() {
         <Title title="Skills Overview" />
         <div className="h-full w-full justify-center flex flex-col">
           <div>
-            <h3 className="font-semibold">Frontend Expertise</h3>
-            <ul className="list-disc list-inside ml-4 mb-4">
+            <h3 className="font-semibold mt-4 text-2xl text-blue-500 ">
+              Frontend Expertise
+            </h3>
+            <ul className="mt-2 max-w-full">
               <li>React.js & TypeScript</li>
               <li>Next.js (SSR, SSG)</li>
               <li>Redux Toolkit & Context API</li>
@@ -17,16 +19,20 @@ export default function SkillsPage() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold">Backend & RESTful API Development</h3>
-            <ul className="list-disc list-inside ml-4 mb-4">
+            <h3 className="font-semibold mt-4 text-2xl text-blue-500 ">
+              Backend & RESTful API Development
+            </h3>
+            <ul className="mt-2 max-w-full">
               <li>Node.js & Express.js</li>
               <li>MongoDB & Mongoose ORM</li>
               <li>PostgreSQL & Prisma ORM</li>
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold">DevOps & Cloud Infrastructure</h3>
-            <ul className="list-disc list-inside ml-4 mb-4">
+            <h3 className="font-semibold mt-4 text-2xl text-blue-500 ">
+              DevOps & Cloud Infrastructure
+            </h3>
+            <ul className="mt-2 max-w-full">
               <li>AWS </li>
               <li>CI/CD pipelines</li>
               <li>Docker & Docker Compose</li>
