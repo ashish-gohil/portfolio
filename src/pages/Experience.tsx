@@ -11,32 +11,34 @@ export default function ExperiencePage() {
             Frontend Development
           </h3>
           <p className="mt-2 max-w-full">
-            Over 2.5 years of experience in developing responsive, dynamic web
+            Over 3 years of experience in developing responsive, dynamic web
             applications using React at TCS. Strong expertise in TypeScript for
-            type-safe code and using Bootstrap and Tailwind CSS for modern,
+            type-safe code and using Material UI and Tailwind CSS for modern,
             scalable UI/UX. Proficient in state management using Redux Toolkit
             and implementing server-side rendering (SSR) with Next.js.
           </p>
 
-          <h3 className="font-semibold mt-4 text-2xl text-blue-500 ">
+          <h3 className="font-semibold mt-4 text-2xl text-blue-500">
             Backend Development
           </h3>
           <p className="mt-2 max-w-full">
-            1.5+ years of experience working with Node.js and Express in backend
-            development. Built and maintained RESTful APIs with a focus on
-            scalability and performance. Integrated MongoDB with Mongoose ORM
-            for effective data management and applied Prisma ORM for PostgreSQL
-            databases, handling complex queries and relations.
+            2.5 years of experience in backend development using Node.js and
+            Express, focusing on building scalable and high-performance RESTful
+            APIs. Skilled in integrating MongoDB with Mongoose and PostgreSQL
+            with Prisma ORM for managing complex data relationships. Hands-on
+            experience deploying backend services on AWS, utilizing Lambda, SQS,
+            Secrets Manager, Parameter Store, CloudFormation, and CloudWatch.
           </p>
 
-          <h3 className="font-semibold mt-4 text-2xl text-blue-500 ">
+          <h3 className="font-semibold mt-4 text-2xl text-blue-500">
             DevOps & Cloud Knowledge
           </h3>
           <p className="mt-2 max-w-full">
-            Knowledgeable in AWS services, cloud deployments, and managing CI/CD
-            pipelines for automating deployments. Familiar with Docker concepts
-            for containerization and Docker Compose for orchestrating
-            multi-container environments.
+            Familiar with deploying projects on AWS, with both recent projects
+            hosted on the platform. Experienced with CloudFront, CloudFormation,
+            and CloudWatch for infrastructure and monitoring. Have basic
+            knowledge of CI/CD pipelines and Docker, applied during a learning
+            project.
           </p>
         </div>
       </div>
